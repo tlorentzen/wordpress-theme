@@ -20,7 +20,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">Tlorentzen</a>
+                    <a class="navbar-brand" href="/"><?php echo get_bloginfo('name'); ?></a>
                 </div>
                 <?php
                 wp_nav_menu( array(
@@ -28,9 +28,9 @@
                     'theme_location'    => 'primary',
                     'depth'             => 2,
                     'container'         => 'div',
-                    'container_class'   => 'collapse navbar-collapse navbar-right',
-                    'container_id'      => 'bs-example-navbar-collapse-1',
-                    'menu_class'        => 'nav navbar-nav',
+                    'container_class'   => 'collapse navbar-collapse',
+                    'container_id'      => 'main-menu',
+                    'menu_class'        => 'nav navbar-nav navbar-right',
                     'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                     'walker'            => new wp_bootstrap_navwalker())
                 );
@@ -38,3 +38,6 @@
             </div>
         </nav>
         <div id="content-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">

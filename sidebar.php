@@ -1,1 +1,1 @@
-<?php dynamic_sidebar('sidebar-right');
+<?php dynamic_sidebar('sidebar');

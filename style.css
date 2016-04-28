@@ -1,12 +1,11 @@
 /*
-Theme Name: Tlorentzen Theme
-Theme URI: http://wordpress.org/themes/twentythirteen
+Theme Name: Developer Theme
 Author: Thomas Lorentzen
-Author URI: http://wordpress.org/
-Description:  A lightweight WordPress theme.
+Author URI: https://tlorentzen.net
+Description: Simple developer theme based on bootstrap 3
 Version: 1.0
-Tags:
-Text Domain: tlorentzen-theme
+Tags: simple, bootstrap
+Text Domain: developer-theme
 */
 
 /* Sticky footer styles
@@ -15,19 +14,12 @@ html {
     position: relative;
     min-height: 100%;
 }
-body {
-    /* Margin bottom by footer height */
-    margin-bottom: 38px;
-}
 
 #content-area{
     padding-top:10px;
-    padding-bottom: 30px;
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
@@ -53,3 +45,24 @@ body > .container {
 code {
     font-size: 80%;
 }
+
+article > header{
+    padding-bottom: 8px;
+}
+
+article{
+    padding-bottom: 25px;
+}
+
+article:not(:first-child){
+    padding-top:40px;
+    border-top:1px solid gray;
+}
+
+
+
+
+
+
+
+
