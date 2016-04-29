@@ -1,5 +1,6 @@
 <?php
-require_once(get_template_directory().'/3party/wp-bootstrap-navwalker.php');
+require_once(get_template_directory().'/walkers/bootstrap-nav-walker.php');
+require_once(get_template_directory().'/walkers/bootstrap-comment-walker.php');
 
 // Add Thumbnails feature.
 add_theme_support( 'post-thumbnails' );
@@ -53,3 +54,10 @@ $args = array(
 );
 
 register_sidebar( $args );
+
+/* ------------------------------------------------------------------------- */
+
+function custom_theme_setup() {
+    add_theme_support( 'html5', array( 'comment-list' ) );
+}
+add_action( 'after_setup_theme', 'custom_theme_setup' );
